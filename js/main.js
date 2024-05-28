@@ -20,12 +20,20 @@ $(document).ready(function(){
 	}, function(){
 		$(this).text(prev)
 	});
-  })
+  });
 
-$('.closedbar').on("mouseenter", 
-	$(this).css("background-color", "#FFF");
-)
-// https://api.jquery.com/hover/
+  //closed bar hover function
+$('.closedbar').on("mouseenter", function(){ 
+	$('.closedbar').text("⌅");
+});
+$('.closedbar').on("mouseleave", function(){
+	$('.closedbar').text("^");
+});
+// closed bar click
+$('.closedbar').on("click", function(){
+	$('.closedbar').fadeOut();
+	$('.navbar').fadeIn();
+});
 
 // Copy email to clipboard
 function copyToClipboard(text) {
