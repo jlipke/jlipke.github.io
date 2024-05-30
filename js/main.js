@@ -22,19 +22,6 @@ $(document).ready(function(){
 	});
   });
 
-  //closed bar hover function
-$('.closedbar').on("mouseenter", function(){ 
-	$('.closedbar').text("⌅");
-});
-$('.closedbar').on("mouseleave", function(){
-	$('.closedbar').text("^");
-});
-// closed bar click
-$('.closedbar').on("click", function(){
-	$('.closedbar').fadeOut();
-	$('.navbar').fadeIn();
-});
-
 // Copy email to clipboard
 function copyToClipboard(text) {
     var dummy = document.createElement("textarea");
@@ -70,7 +57,7 @@ $('.email').click(function(){
 })
 
 function animateText(id = 1){
-	var row = "row" + id;
+	var row = "box" + id;
 	var exists = document.getElementById(row);
 	if(exists){
 		row = "#" + row;

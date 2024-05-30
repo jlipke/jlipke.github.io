@@ -13,16 +13,7 @@ html,h1,h2,h3,h4,h5,h6,a{
 	text-align: left;
 }
 .navbar{
-	display: none;
 	background: #9078b5;
-}
-.closedbar{
-	text-align: center;
-	color:white;
-	background: #9078b5;
-	position: absolute;
-	width: 100%;
-	height: 30px;
 }
 .nav-link , .navbar-brand{
 	color: #f4f4f4;
@@ -68,7 +59,7 @@ html,h1,h2,h3,h4,h5,h6,a{
 }
 .description{
     position: left;
-	padding-top: 200px;
+	padding-top: 100px;
 	padding-left: 100px;
 	padding-right: 100px;
 }
@@ -119,7 +110,7 @@ html,h1,h2,h3,h4,h5,h6,a{
 	color: #10828C;
 }
 .about .desc p{
-	line-height:1.2;
+	line-height:1.1;
 	color:white;
 }
 
