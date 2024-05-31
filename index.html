@@ -2,88 +2,91 @@
 <html lang="en">
 <head>
 	<title>Joseph L. Lipke</title>
-	 <!-- bootstrap css file -->
-
+	 <!-- css files -->
+	  <link rel="stylesheet" type="text/css" href="cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
       <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
       <link rel="stylesheet" type="text/css" href="css/main.css">
 
 </head>
 <body>
-  <!-- navbar -->
-
-  <nav class="navbar navbar-expand-lg fixed-top ">
-	  <a class="navbar-brand" href="#">Home</a>
+	<!-- navbar -->
+  	<nav class="navbar navbar-expand-lg fixed-top ">
+	  <a class="nav-link" data-value="top" style="font-size:x-large" href="#">⇑</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
 
 	  <div class="collapse navbar-collapse " id="navbarSupportedContent">
 	    <ul class="navbar-nav mr-4">
-	      
-	      <li class="nav-item">
-	        <a class="nav-link" data-value="about" href="#">About</a>
-		  </li>
+
+	    <li class="nav-item">
+	    	<a class="nav-link" data-value="about" href="#">About</a>
+		</li>
 		 
-	      <li class="nav-item">
+	    <li class="nav-item">
 	        <a class="nav-link " data-value="contact" href="#">Contact</a>
-	      </li>
+	    </li>
 	    </ul>
 	    
 	  </div>
-</nav>
+	</nav>
 <!-- header -->
 <header class="header">
-  <div class="overlay"></div>
-   <div class="container">
-   	  <div class="description ">
-  	<h1>
-  		Hello,
-  		<p class="leftalign">
-			Experienced Full Stack Software developer proficient in both front and back-end development. Specializing in ASP.NET, JavaScript, T-SQL and C#/C++
-  		</p>
-  		
-  	</h1>
-  </div>
-   </div>
-  
+<div class="overlay"></div>
+	<div class="row align-items-start">
+   	<div class="description col-4">
+		<div class="introbox" id="box1">
+			<h1>Hello,</h1> 
+		</div><br/>
+		<div class="introbox" id="box2">	
+			<h5>
+			I'm a Full Stack software developer proficient in both front and back-end development. Specializing in Asp.NET, T-SQL/Linq and JavaScript stacks.</h5>
+		</div><br/>
+		<div class="introbox" id="box3">
+			<h5>
+			I graduated from Fox Valley Technical College with my Associate's in Software Development in 2021.
+			</h5>
+		</div><br/>
+		<div class="introbox"  id="box4">
+			<h5>Along the way, I've had the privilege to work with a team of peers during multple projects involving C#/VB/C++, T-SQL, Asp.NET, Entity Framework, MVC, nTier, JavaScript/JQuery/Ajax, PHP, Xamarin, and iOS/Swift.</h5>
+		</div>
+	</div>
+	<div class="col-8">
+	
+	
 </header>
 
 <!-- about section -->
 <div class="about" id="about">
-	<div class="container">
-	  <h1 class="text-center">About Me</h1>
+	<div class="container"><br />
 		<div class="row">
-			<div class="col-lg-4 col-md-4 col-sm-12">
+			<div class="col-4">
 				<img src="images/jlipke.png" class="img-fluid">
 			</div>
-			<div class="col-lg-8 col-md-8 col-sm-12 desc">
+			<div class="col-8 desc">
 			  
 				<h3>Lipke, Joe</h3>
 				<p class="leftalign">
-				   I am a graduate of Fox Valley Technical College with my 
-				   associate's in Software Development. Along the way, I have had the privilege to work with ASP.Net, MVC, Entity Framework,
-				   Javascript/JQuery, Xamarin, Swift and PHP while working with a team of peers. </p>
-				
+					In July 2021, I started working with a team of developers at a local business that performs in house and out call calibration services for a large variety of manufacturing companies. 
+					With this, they provide a customer website to allow customers and employees to use multiple accounts with varying permissions to retrieve/store customer's calibration data for auditing purposes.
+				</p>
+				<p class="leftalign">	
+					During my first year I was tasked to research and build a Xamarin/C# mobile app designed for employees
+					to simplify communications for out call services and management. Utilizing MVVM structure, and various RestAPI methods. It's UI was assembled with XAML with the focus on low resource iOS/Android devices. </p>
+				<p class="leftalign">
+					I'd later move on to using either Azure DevOps or IT Tickets, to recreate, solve, and develop new solutions for issues focused in the Asp.NET environment. Specifically working with a .Net/C# MVC website and a WinForms C#/VB desktop app. 
+					Much of my time was spent managing and creating multiple RestAPI methods to build large T-SQL/Linq queries, and adjusting existing UI to format the data properly. It also managed Microsoft Outlook
+					and Google API services. </p>				
 			</div>
+			
 		</div> <br/>
-		<div class="col-lg-12 col-md-4 col-sm-12">
-			<p class="leftalign">
-				Fox Valley Metrology performs in house and out call calibration services for a large variety of manufacturing companies. 
-				With this, they provide a customer website to allow customer employees multiple accounts with varying permissions to retrieve/store customer's 
-				calibration certifications, calibration reminders, and create new orders while remaining reliable for equipment auditing purposes. </p>
-			<p class="leftalign">
-				Using either Azure DevOps or IT Tickets, I recreated and solved issues focused on the .Net/C# MVC website and a WinForms C#/VB desktop app.
-				 The website ran multiple API methods with t-sql/linq for retreiving/updating Customer calibration and Employee data. Also allowing access to Microsoft Outlook 
-				 and Google Place API's, and SAP Crystal Reports as certifications. </p>
-			<p class="leftalign">	
-				Before I started focusing mainly in website issues, during the first year I was instructed to research and build a Xamarin/C# mobile app designed for employees
-				to simplify communications for out call services and management. Utilizing MVVM structure, and various API methods to the website, retrieving similar data 
-				with the additions of allowing employees to scan labels, check in per diem receipts, and receive live job calendar updates. It was designed for iOS/Android, 
-				with low resource devices as the focus. </p>
-			<p class="leftalign">
-			   In my free time, I love to produce music, play video games, and enjoy the outdoors. 
-			</p>
-		</div>
+		<div class="row"></div>
+			<div class="col-12" style="color:white">
+				<p class="leftalign">
+					In my free time, I love to hike, produce music, and play video games. 
+				</p>
+			</div>
+		</div>	
 	</div>
 </div>
 
@@ -114,14 +117,12 @@
 			<div class="col-sm">
 				<h4>My LinkedIn</h4>
 			</div>
-
 		</div>
 	</div>
 </div>
 
-
-
-<!-- add Javasscript file from js file -->
+<!-- add JavaScript file from js file -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src='js/main.js'></script>

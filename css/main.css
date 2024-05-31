@@ -48,17 +48,24 @@ html,h1,h2,h3,h4,h5,h6,a{
 	min-width: 100%;
 	left: 0;
 	top: 0;
-	background: rgba(244, 244, 244, 0.50);
+	background: rgba(133, 133, 133, 0.2);
+	/*background: rgba(244, 244, 244, 0.50);*/
+}
+.introbox{
+	background: rgba(31, 23, 43, 0.9);
+	display: none;
+	padding: 10px;
+	/* display: inline-flex; */
 }
 .description{
-    position: absolute;
-    top: 30%;
-    margin: auto;
-    padding: 2em;
-
+    position: left;
+	padding-top: 100px;
+	padding-left: 100px;
+	padding-right: 100px;
 }
-.description h1{
-	color:#3c2d52 ;
+
+.description h1,h5{
+	color:#ffffff;
 }
 .description p{
 	color:#666;
@@ -72,12 +79,12 @@ html,h1,h2,h3,h4,h5,h6,a{
 	color:#fff;
 }
 .about{
-	
+	/*background*/
 	padding: 1em;
 	padding-bottom: 40px;
 	padding-top: 10px;
 	position: relative;
-	background-color: white;
+	background-color: #333;
 	
 }
 .about h1{
@@ -103,8 +110,8 @@ html,h1,h2,h3,h4,h5,h6,a{
 	color: #10828C;
 }
 .about .desc p{
-	line-height:2;
-	color:#888;
+	line-height:1.1;
+	color:white;
 }
 
 
